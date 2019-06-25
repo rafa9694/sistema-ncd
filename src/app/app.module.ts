@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { LaboratorioComponent } from './laboratorio/laboratorio.component';  
 
@@ -27,10 +27,11 @@ import { LaboratorioComponent } from './laboratorio/laboratorio.component';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatDialog,
+    MatDialogModule,
     HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [LaboratorioComponent]
 })
 export class AppModule { }
