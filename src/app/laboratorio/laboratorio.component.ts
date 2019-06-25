@@ -1,5 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
+import {Acoes} from './acoes'
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { from } from 'rxjs';
 
 export interface DialogData {
   numero: string;
@@ -37,18 +39,3 @@ export class LaboratorioComponent implements OnInit {
 
 }
 
-@Component({
-  selector: 'acoes',
-  templateUrl: 'acoes.html',
-})
-export class Acoes {
-
-  constructor(
-    public dialogRef: MatDialogRef<Acoes>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
-
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
-
-}

@@ -12,12 +12,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { LaboratorioComponent } from './laboratorio/laboratorio.component';  
+import { Acoes } from './laboratorio/acoes';  
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    LaboratorioComponent
+    LaboratorioComponent,
+    Acoes
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,6 @@ import { LaboratorioComponent } from './laboratorio/laboratorio.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [LaboratorioComponent]
+  entryComponents: [Acoes]
 })
 export class AppModule { }
