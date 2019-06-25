@@ -1,0 +1,40 @@
+div{
+    border-style: solid;
+    border-color: white;
+}
+div.laboratorio {
+    
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    overflow: auto;
+   
+}
+
+div.meio1 {
+
+    width: 49%;
+    margin: 0;
+    position: relative;
+    border-color: aqua;
+    float: left;
+
+}
+div.meio2 {
+    
+    margin: 0;
+    width: 49%;
+    position: relative;
+    border-color: aqua;
+    float: right;
+
+}
+
+
+h1{
+    color: yellow;
+}
+
+button{
+   margin: 1%;
+}

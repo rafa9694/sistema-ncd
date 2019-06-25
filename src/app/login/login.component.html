@@ -1,0 +1,16 @@
+<div style="text-align:center">
+  <h1>
+    Bem vindo ao Sistema NCD!
+  </h1>
+  <img width="300" alt="Angular Logo" src="assets/img/logo-cor-vertical.png">
+</div>
+<div class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Usuário" name="login" id="login">    
+  </mat-form-field>
+  <mat-form-field class="example-full-width" > 
+    <input matInput placeholder="Senha" [type]="hide ? 'text' : 'password'" name="senha" id="senha">
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>     
+  </mat-form-field> 
+  <button mat-stroked-button (click)="confereLogin() ">Entrar</button>
+</div>
