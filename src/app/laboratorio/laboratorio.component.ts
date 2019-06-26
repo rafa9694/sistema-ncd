@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import {Acoes} from './acoes'
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { Acoes } from './acoes'
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { from } from 'rxjs';
 
 export interface DialogData {
@@ -20,16 +20,13 @@ export class LaboratorioComponent implements OnInit {
 
   constructor(public dialog: MatDialog) { }
 
-  openDialog() {
+  openDialog(num) {
     
-    const dialogRef = this.dialog.open(Acoes,{
+     this.dialog.open(Acoes,{
       data: {
-        numero : "1",
+        numero : num,
         mensagem : this.mensagem
       }
-    });
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
     });
 
   }

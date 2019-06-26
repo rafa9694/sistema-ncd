@@ -12,7 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { LaboratorioComponent } from './laboratorio/laboratorio.component';  
-import { Acoes } from './laboratorio/acoes';  
+import { Acoes } from './laboratorio/acoes';
+import { FormsModule } from '@angular/forms';  
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { Acoes } from './laboratorio/acoes';
     MatIconModule,
     MatDialogModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

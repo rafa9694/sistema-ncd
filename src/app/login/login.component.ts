@@ -52,7 +52,6 @@ export class LoginComponent implements OnInit {
     this.apiService.readPolicies().subscribe((policies: Policy[])=>{
       this.policies = policies;
       this.router.navigate(['laboratorio']);
-      console.log("aki");
      });
   }
   

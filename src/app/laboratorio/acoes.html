@@ -1,11 +1,11 @@
-<h1 mat-dialog-title>Olá o que deseja fazer com a máquina {{data.numero}}</h1>
+<h1 mat-dialog-title>Olá o que deseja fazer com a máquina {{data.numero}} ?</h1>
 <div mat-dialog-content>
     <mat-form-field>
-      <textarea matInput placeholder="Escreva uma mensagem"></textarea>
+      <textarea matInput [(ngModel)]="data.mensagem" placeholder="Escreva uma mensagem"></textarea>
     </mat-form-field>
 </div>
 <div mat-dialog-actions>
-    <button mat-button (click)="LigarPC()">Ligar</button>
-    <!-- <button mat-button [mat-dialog-close]="data.mensagem" cdkFocusInitial>Enviar mensagem</button> -->
-    <button mat-button (click)="onNoClick()">Desligar</button>
+    <button mat-button (click)="ligarPC()">Ligar</button>
+    <button mat-button [mat-dialog-close]="data.mensagem" (click)="enviaMensagem()">Enviar mensagem</button>
+    <button mat-button (click)="desligarPC()">Desligar</button>
 </div>
