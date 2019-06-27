@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { Policy } from '../policy';
 import { Router } from '@angular/router';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -48,11 +49,15 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  confereLogin(){
-    this.apiService.readPolicies().subscribe((policies: Policy[])=>{
-      this.policies = policies;
-      this.router.navigate(['laboratorio']);
-     });
+  confereLogin(form){
+    // this.apiService.readPolicies().subscribe((policies: Policy[])=>{
+    //   this.policies = policies;
+    //   this.router.navigate(['laboratorio']);
+    //  });
+    this.apiService.createPolicy(form.value).subscribe((policy: Policy)=>{
+      console.log("Policy created, ", policy);
+    });
+    
   }
   
 }

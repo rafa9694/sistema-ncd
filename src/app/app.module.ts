@@ -13,7 +13,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { LaboratorioComponent } from './laboratorio/laboratorio.component';  
 import { Acoes } from './laboratorio/acoes';
-import { FormsModule } from '@angular/forms';  
+import { FormsModule } from '@angular/forms';
+  
 
 
 @NgModule({

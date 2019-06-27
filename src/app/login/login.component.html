@@ -4,13 +4,13 @@
   </h1>
   <img width="300" alt="Angular Logo" src="assets/img/logo-cor-vertical.png">
 </div>
-<div class="example-form">
+<form #f = "ngForm" class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Usuário" name="login" id="login">    
+    <input matInput placeholder="Usuário" name="login" [(ngModel)] = "selectedPolicy.login" >    
   </mat-form-field>
   <mat-form-field class="example-full-width" > 
-    <input matInput placeholder="Senha" [type]="hide ? 'text' : 'password'" name="senha" id="senha">
+    <input matInput placeholder="Senha" [type]="hide ? 'text' : 'password'" name="senha" [(ngModel)] = "selectedPolicy.senha">
     <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>     
   </mat-form-field> 
-  <button mat-stroked-button (click)="confereLogin() ">Entrar</button>
-</div>
+  <button mat-stroked-button (click)="confereLogin(f) ">Entrar</button>
+</form>
