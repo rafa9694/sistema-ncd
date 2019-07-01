@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { Policy } from '../policy';
 import { Router } from '@angular/router';
-import { from } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
+
 
 @Component({
   selector: 'app-login',
@@ -11,6 +13,7 @@ import { from } from 'rxjs';
 })
 export class LoginComponent implements OnInit {
 
+  resposta: HttpClient;
   policies:  Policy[];
   selectedPolicy:  Policy  = { id :  null , usuario:null, senha:  null};
   constructor(private apiService: ApiService,private router: Router) { }
@@ -52,9 +55,10 @@ export class LoginComponent implements OnInit {
   confereLogin(form){
     
     this.apiService.createPolicy(form.value).subscribe((policy: Policy)=>{
-      console.log("Policy created, ", policy);
+      console.log("Login efetuado com sucesso");
+      this.router.navigate(['laboratorio']);
     });
-    
+
   }
   
 }

@@ -1,38 +1,41 @@
 <h1>
-  Bem vindo ao Sistema NCD!
+  Laboratório do NCD
 </h1>
- <div class = "laboratorio">
-   <div class="meio1">
-        <div>
-          <button mat-mini-fab (click)="openDialog(1)" color="primary">PC 1</button>
-          <button mat-mini-fab (click)="openDialog(2)" color="primary">PC 2</button>
-          <button mat-mini-fab color="primary">PC</button>
-          <button mat-mini-fab color="primary">PC</button>
-        </div>
-        <div>
-          <button mat-mini-fab color="primary">PC</button>
-        </div>
-   </div>
-   <div class="meio2">
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-    <button mat-mini-fab color="primary">PC</button>
-   </div>
- </div>
+
+<div class="wrapper">
+  <div class="box1">
+    <button mat-mini-fab (click)="openDialog(1)" color="primary">PC 1</button>
+    <button mat-mini-fab (click)="openDialog(2)" color="primary">PC 2</button>
+    <button mat-mini-fab (click)="openDialog(3)" color="primary">PC 3</button>
+    <button mat-mini-fab class="button4" (click)="openDialog(4)" color="primary">PC 4</button>
+    <button mat-mini-fab class="button5" (click)="openDialog(5)" color="primary">PC 5</button>      
+  </div>
+  <div class ="box2">
+    <button mat-mini-fab (click)="openDialog(4)" color="primary">PC 4</button>
+    <button mat-mini-fab (click)="openDialog(7)" color="primary">PC 9</button>
+    <button mat-mini-fab (click)="openDialog(10)" color="primary">PC 14</button>
+    <button mat-mini-fab (click)="openDialog(13)" color="primary">PC 19</button>
+    <button mat-mini-fab (click)="openDialog(5)" color="primary">PC 5</button>
+    <button mat-mini-fab (click)="openDialog(8)" color="primary">PC 10</button>
+    <button mat-mini-fab (click)="openDialog(11)" color="primary">PC 15</button>
+    <button mat-mini-fab (click)="openDialog(14)" color="primary">PC 20</button>
+    <button mat-mini-fab (click)="openDialog(6)" color="primary">PC 6</button>
+    <button mat-mini-fab (click)="openDialog(9)" color="primary">PC 11</button>
+    <button mat-mini-fab (click)="openDialog(12)" color="primary">PC 16</button>
+    <button mat-mini-fab (click)="openDialog(15)" color="primary">PC 21</button>
+    
+  </div>
+  <div class ="box3">
+    <button mat-mini-fab class="buttonSec" (click)="openDialog(Sec)" color="primary">Sec</button>
+  </div>
+  <div class = "box4">
+    <button mat-mini-fab class="buttonSec" (click)="openDialog(7)" color="primary">PC 7</button>
+    <button mat-mini-fab class="buttonSec" (click)="openDialog(8)" color="primary">PC 12</button>
+    <button mat-mini-fab class="buttonSec" (click)="openDialog(2)" color="primary">PC 17</button>
+    <button mat-mini-fab class="buttonSec" (click)="openDialog(2)" color="primary">PC 22</button>
+    <button mat-mini-fab class="buttonbox4" (click)="openDialog(2)" color="primary">PC 8</button>
+    <button mat-mini-fab class="buttonbox4" (click)="openDialog(2)" color="primary">PC 13</button>
+    <button mat-mini-fab class="buttonbox4" (click)="openDialog(2)" color="primary">PC 18</button>
+    <button mat-mini-fab class="buttonbox4" (click)="openDialog(2)" color="primary">PC 23</button>
+
+  </div>
