@@ -50,10 +50,7 @@ export class LoginComponent implements OnInit {
   }
 
   confereLogin(form){
-    // this.apiService.readPolicies().subscribe((policies: Policy[])=>{
-    //   this.policies = policies;
-    //   this.router.navigate(['laboratorio']);
-    //  });
+    
     this.apiService.createPolicy(form.value).subscribe((policy: Policy)=>{
       console.log("Policy created, ", policy);
     });

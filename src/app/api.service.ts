@@ -16,7 +16,6 @@ export class ApiService {
   }
 
   createPolicy(policy: Policy): Observable<Policy>{
-    console.log(policy);
     return this.httpClient.post<Policy>(`${this.PHP_API_SERVER}/api/create.php`, policy);
   }
  
