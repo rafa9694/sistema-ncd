@@ -13,6 +13,6 @@ export class AppComponent {
   constructor (private router: Router){}
   
   ngOnInit(){
-    this.router.navigate(['laboratorio']);
+    this.router.navigate(['login']);
   }
 }
